@@ -89,15 +89,15 @@ int alphabeta(int depth,int alpha,int beta,char myboard[BOARD_SIZE][BOARD_SIZE],
 
    1. 类比象棋中的跳马位 ，当棋子互为“日”字时，对方不好进攻，构成一种比较稳定的棋局
 
-      <img src="/assets/horse.png" alt="horse" style="zoom:50%;" />
+      <img src="/assets/horse.png" alt="horse" style="zoom: 25%;" />
 
    2. 将2*3跳马位扩大到2\*4
 
-      <img src="/assets/24.png" alt="2*4" style="zoom:67%;" />
+      <img src="/assets/24.png" alt="2*4" style="zoom: 33%;" />
 
    3. 出现这样子的局面，限制敌方（黑）的走位，只可以选择左下或者右上，并且给此时其他地方的棋子创造机会
 
-      <img src="/assets/chess1.png" alt="chess1" style="zoom:80%;" />
+      <img src="/assets/chess1.png" alt="chess1" style="zoom: 33%;" />
 
    4. 每个敌方棋子的四个角若存在我方棋子，在死局或在四步之内没有吃子局面出现时进行防守。不能让四个角同时存在，只存在一个就行
 
